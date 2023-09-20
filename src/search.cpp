@@ -2454,7 +2454,7 @@ void Tablebases::rank_root_moves(Position& pos, Search::RootMoves& rootMoves) {
 // Kelly begin
 void putGameLineIntoLearningTable()
 {
-    double learning_rate = 0.5;
+    double learning_rate = 1;
     double gamma = 0.99;
 
     if (gameLine.size() > 1)
